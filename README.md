@@ -4,6 +4,9 @@ SG6 integrated application and transfer instructions: [START_HERE_JETSON.md](STA
 Run `python -m embedded_sg6.app --help` from this repository root.
 Current status: local landmark replay and no-face model smoke test verified; Jetson deployment remains untested.
 
+Private SG6 handoff repository: https://github.com/hammadammar/drowsiness-detection-system-sg6 .
+See [publication notes](documentation/SG6_GITHUB_HANDOFF.md) for preserved upstream history and release assets.
+
 ## Repository Structure
 ```
 project/
