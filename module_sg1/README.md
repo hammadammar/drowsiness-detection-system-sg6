@@ -1,23 +1,114 @@
-# Module — Sub-group 1
+# SG1 Face / Eye / Mouth Landmark Pipeline
 
-**Owner:** _TBD_
+Python script version of `week5_CV_project_SG_1.ipynb` (originally written for Google Colab).
 
-## Purpose
-_TBD: the technical module owned by sub-group 1._
+It uses MediaPipe's Face Landmarker to process a driver video and produce, per frame:
+face box, 6-point left/right eye landmarks, mouth points, ROI boxes for both eyes and the
+mouth, all 478 landmarks, and head pose (yaw, pitch, roll).
 
-## Dependencies
-_List libraries, versions and hardware needed._
+## What it outputs
 
-## Input / Output Interface
-_Describe inputs and outputs. Link the schema in [`interfaces/`](../interfaces/)._
+Everything goes into the `outputs/` folder (change with `--out-dir`):
 
-## How to Run
-```bash
-# setup and run commands
+| File | Description |
+|------|-------------|
+| `sg1_annotated_frame.jpg` | First frame with boxes, landmarks and head pose drawn |
+| `config_comparison.csv` | Config A (0.50) vs Config B (0.70) detection confidence results |
+| `sg1_annotated_video.mp4` | Full annotated video (mp4v codec) |
+| `sg1_annotated_video_h264.mp4` | H.264 re-encode, only if `ffmpeg` is installed |
+
+The model file `face_landmarker.task` is downloaded automatically into the working
+directory on the first run (internet needed that one time).
+
+## Setup (virtual environment)
+
+Python 3.9 to 3.12 is the safest choice for MediaPipe. I am not certain which newer Python
+versions have MediaPipe wheels, so check the MediaPipe install docs if `pip install` fails.
+
+### Windows (PowerShell)
+
+```powershell
+cd sg1_face_pipeline
+python -m venv venv
+venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-## Test Data
-_Which data in [`datasets/`](../datasets/) this uses, and how to get it._
+If PowerShell blocks activation, run this once in that window and try again:
 
-## Current Performance
-_Latest metrics, the date measured and the dataset used._
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+### Windows (Command Prompt)
+
+```bat
+cd sg1_face_pipeline
+python -m venv venv
+venv\Scripts\activate.bat
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Linux / macOS
+
+```bash
+cd sg1_face_pipeline
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## Run
+
+Put your video somewhere local (for example next to the script) and run:
+
+```bash
+python sg1_face_pipeline.py --video "Video Project.mp4"
+```
+
+Useful options:
+
+```text
+--out-dir DIR      Output folder (default: outputs)
+--skip-compare     Skip the Config A vs Config B comparison
+--skip-video       Skip writing the annotated video
+--no-h264          Skip the ffmpeg H.264 re-encode
+```
+
+Quick test on just the first frame:
+
+```bash
+python sg1_face_pipeline.py --video "Video Project.mp4" --skip-compare --skip-video
+```
+
+## Optional: ffmpeg
+
+The H.264 re-encode step needs `ffmpeg` on your PATH (it is a system program, not a pip
+package). If it is missing, the script skips that step and still produces the `mp4v` video.
+Install it with `winget install ffmpeg` (Windows), `brew install ffmpeg` (macOS) or
+`sudo apt install ffmpeg` (Ubuntu/Debian).
+
+## Changes from the notebook
+
+- Colab-only parts removed (`!pip`, `!wget`, `google.colab.drive`, `IPython.display`).
+- The video path is now a command line argument instead of a Google Drive path.
+- The two `estimate_head_pose` definitions were merged; the script keeps the fixed
+  version (with the +/-180 degree angle correction).
+- `matplotlib` previews were replaced by saved image/video files, so it works without a display.
+- The Config A / B comparison table is also saved as a CSV.
+
+## Notes
+
+- `face_confidence` is always `None`, same as the notebook, because the Face Landmarker
+  Tasks API does not expose a detector confidence score.
+- Timestamps in VIDEO mode must increase on every frame; the script derives them from the
+  video's FPS (falls back to 25 FPS if the FPS cannot be read).
+- I could not run this against your video or download the model in my environment, so I only
+  syntax-checked the script. Please run it once and tell me if anything errors.
+- The pinned minimum versions in `requirements.txt` are my best estimate of compatible
+  versions, not versions I tested. The notebook output reported MediaPipe 1.1.0 and OpenCV
+  5.0.0, which I could not verify. If you want an exact match to your Colab setup, run
+  `pip freeze` in your working venv and save the result.
