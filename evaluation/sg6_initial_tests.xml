@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="0" skipped="0" tests="2" time="5.612" timestamp="2026-10-28T04:40:38.485884+05:00" hostname="DESKTOP-KBVCGSN"><testcase classname="" name="module_sg2.tests.test_contract" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\HP\OneDrive - National University of Sciences &amp; Technology\Desktop\FYP\sg6-integration\module_sg2\tests\test_contract.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+module_sg2\tests\test_contract.py:17: in &lt;module&gt;
+    import jsonschema
+E   ModuleNotFoundError: No module named 'jsonschema'</error></testcase><testcase classname="" name="module_sg3.tests.test_head_pose" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\HP\OneDrive - National University of Sciences &amp; Technology\Desktop\FYP\sg6-integration\module_sg3\tests\test_head_pose.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+module_sg3\tests\test_head_pose.py:8: in &lt;module&gt;
+    from sg3.upstream_mediapipe import _MODEL_POINTS, estimate_head_pose  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+module_sg3\sg3\upstream_mediapipe.py:12: in &lt;module&gt;
+    import mediapipe as mp
+E   ModuleNotFoundError: No module named 'mediapipe'</error></testcase></testsuite></testsuites>

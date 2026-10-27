@@ -19,6 +19,13 @@ datasets/processed/
 *.tflite
 *.ckpt
 checkpoints/
+*.task
+*.download
+evaluation/*_output.jsonl
+evaluation/no_face_fixture.avi
+.mpl-cache/
+.pytest-tmp/
+.pytest_cache/
 runs/
 wandb/
 

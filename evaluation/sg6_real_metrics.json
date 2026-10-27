@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETED",
+  "error": null,
+  "frames": 600,
+  "errors": 0,
+  "elapsed_s": 1.1262185000005047,
+  "processing_fps": 532.7562990660614,
+  "mean_stage_ms": {
+    "sg2_ms": 0.6320958333333329,
+    "validation_ms": 0.5940308333333337,
+    "sg3_ms": 0.01493183333333333,
+    "sg4_ms": 0.10431983333333328,
+    "sg5_ms": 0.007997500000000003,
+    "alert_ms": 0.0031893333333333396,
+    "pipeline_ms": 1.4301326666666656
+  },
+  "max_stage_ms": {
+    "sg2_ms": 32.6255,
+    "validation_ms": 5.4253,
+    "sg3_ms": 1.5434,
+    "sg4_ms": 2.3241,
+    "sg5_ms": 0.8547,
+    "alert_ms": 0.0274,
+    "pipeline_ms": 33.4549
+  },
+  "peak_sampled_rss_bytes": 48431104,
+  "cpu_percent_one_core": 86.01794412004116,
+  "gpu_utilization": null,
+  "camera_to_alert_latency_ms": null,
+  "frame_drops": null,
+  "verification": "VERIFIED ON RECORDED INPUT",
+  "input": "interfaces\\sg2\\examples\\eb8_09_real_sg1.jsonl",
+  "config": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "driver_region": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "eye_config": "module_sg2/configs/primary.yaml",
+    "temporal": {},
+    "decision_method": "rule",
+    "alert_cooldown_ms": 5000
+  }
+}

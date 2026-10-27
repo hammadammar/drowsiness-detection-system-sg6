@@ -1,0 +1,8 @@
+# Portable integration/test dependencies; preserve JetPack's OpenCV and GPU libraries.
+numpy>=1.24
+PyYAML>=6
+jsonschema>=4.18
+psutil>=5.9
+pytest>=7
+# Raw SG1 input also needs system-compatible OpenCV, MediaPipe Tasks and pandas.
+# SG2 primary additionally needs a validated ONNX Runtime + CNN model.

@@ -1,0 +1,32 @@
+{
+  "status": "FAILED",
+  "error": "ValueError: Missing or empty SG1 model: models\\missing.task; see deployment documentation",
+  "frames": 0,
+  "errors": 1,
+  "elapsed_s": 0.1701613000004727,
+  "processing_fps": 0.0,
+  "mean_stage_ms": {},
+  "max_stage_ms": {},
+  "peak_sampled_rss_bytes": 45985792,
+  "cpu_percent_one_core": 0.0,
+  "gpu_utilization": null,
+  "camera_to_alert_latency_ms": null,
+  "frame_drops": null,
+  "verification": "NOT TESTED",
+  "input": "None",
+  "config": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "driver_region": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "eye_config": "module_sg2/configs/primary.yaml",
+    "temporal": {},
+    "decision_method": "rule",
+    "alert_cooldown_ms": 5000
+  }
+}

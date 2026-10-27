@@ -4,6 +4,7 @@ import numpy as np
 import pytest
 
 cv2 = pytest.importorskip("cv2")
+pytest.importorskip("mediapipe", reason="Optional SG3 standalone front end needs MediaPipe")
 
 from sg3.upstream_mediapipe import _MODEL_POINTS, estimate_head_pose  # noqa: E402
 

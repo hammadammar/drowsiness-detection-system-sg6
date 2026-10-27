@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="5" failures="0" skipped="0" tests="94" time="87.618" timestamp="2026-10-28T04:43:49.482968+05:00" hostname="DESKTOP-KBVCGSN"><testcase classname="tests.test_integration" name="test_real_sample_pipeline_alignment" time="1.099" /><testcase classname="tests.test_integration" name="test_reject_incompatible[change0]" time="0.009" /><testcase classname="tests.test_integration" name="test_reject_incompatible[change1]" time="0.009" /><testcase classname="tests.test_integration" name="test_reject_incompatible[change2]" time="0.008" /><testcase classname="tests.test_integration" name="test_reject_incompatible[change3]" time="0.009" /><testcase classname="tests.test_integration" name="test_reject_incompatible[change4]" time="0.009" /><testcase classname="tests.test_integration" name="test_duplicate_timestamp_rejected" time="0.016" /><testcase classname="tests.test_integration" name="test_no_face_never_blink_or_alert" time="0.127" /><testcase classname="tests.test_integration" name="test_no_face_after_closure_does_not_create_blink" time="0.023" /><testcase classname="tests.test_integration" name="test_sustained_closure_and_recovery" time="1.271" /><testcase classname="tests.test_integration" name="test_adapter_alignment_and_unknown" time="0.010" /><testcase classname="tests.test_integration" name="test_four_mouth_points_not_fabricated" time="0.010" /><testcase classname="tests.test_integration" name="test_alert_cooldown_and_failure" time="0.002" /><testcase classname="tests.test_integration" name="test_missing_optional_fields_safe" time="0.018" /><testcase classname="module_sg2.tests.test_contract" name="test_sg1_v1_input_contract[eb8_09_real_sg1.jsonl]" time="0.129" /><testcase classname="module_sg2.tests.test_contract" name="test_sg1_v1_input_contract[mock_sg1_alert.jsonl]" time="0.132" /><testcase classname="module_sg2.tests.test_contract" name="test_sg1_v1_input_contract[mock_sg1_drowsy.jsonl]" time="0.174" /><testcase classname="module_sg2.tests.test_contract" name="test_sg1_v1_input_contract[mock_sg1_face_lost.jsonl]" time="0.245" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[eb8_09_real_sg1.jsonl-primary]" time="0.899" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[eb8_09_real_sg1.jsonl-backup]" time="0.850" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_alert.jsonl-primary]" time="2.899" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_alert.jsonl-backup]" time="3.156" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_drowsy.jsonl-primary]" time="3.149" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_drowsy.jsonl-backup]" time="2.979" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_face_lost.jsonl-primary]" time="4.374" /><testcase classname="module_sg2.tests.test_contract" name="test_sg2_output_matches_schema[mock_sg1_face_lost.jsonl-backup]" time="3.772" /><testcase classname="module_sg2.tests.test_contract" name="test_primary_without_frame_equals_backup" time="1.078" /><testcase classname="module_sg2.tests.test_contract" name="test_primary_falls_back_when_model_missing" time="0.143" /><testcase classname="module_sg2.tests.test_contract" name="test_real_sample_matches_hand_labels" time="0.465" /><testcase classname="module_sg2.tests.test_contract" name="test_demo_runs_headless_on_mock" time="37.619" /><testcase classname="module_sg2.tests.test_sg2" name="test_ear_matches_formula" time="0.003" /><testcase classname="module_sg2.tests.test_sg2" name="test_ear_same_for_both_eye_orderings" time="0.005" /><testcase classname="module_sg2.tests.test_sg2" name="test_eye_crop_shape" time="0.296" /><testcase classname="module_sg2.tests.test_sg2" name="test_blink_vs_long_closure" time="0.002" /><testcase classname="module_sg2.tests.test_sg2" name="test_short_face_loss_does_not_split_closure" time="0.002" /><testcase classname="module_sg2.tests.test_sg2" name="test_invalid_face_gives_unknown" time="0.006" /><testcase classname="module_sg2.tests.test_sg2" name="test_mock_drowsy_stream_reproduces_ground_truth" time="0.609" /><testcase classname="module_sg2.tests.test_sg2" name="test_output_has_all_schema_fields" time="0.011" /><testcase classname="module_sg3.tests.test_head_pose" name="test_frontal_face_is_near_zero" time="0.003" /><testcase classname="module_sg3.tests.test_head_pose" name="test_pitch_down_is_positive" time="0.004" /><testcase classname="module_sg3.tests.test_head_pose" name="test_roll_magnitude" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_formula_exact" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_is_scale_invariant" time="0.004" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_rejects_bad_points[None]" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_rejects_bad_points[bad1]" time="0.003" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_rejects_bad_points[bad2]" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_mar_rejects_bad_points[bad3]" time="0.005" /><testcase classname="module_sg3.tests.test_sg3" name="test_yawn_prob_monotonic_and_centered" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_ids_copied_through" time="0.009" /><testcase classname="module_sg3.tests.test_sg3" name="test_face_invalid_gates_everything" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_closed_vs_wide_open_mouth" time="0.007" /><testcase classname="module_sg3.tests.test_sg3" name="test_missing_or_bad_pts_invalid_but_cues_survive" time="0.003" /><testcase classname="module_sg3.tests.test_sg3" name="test_roi_not_needed" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_custom_threshold" time="0.003" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose0-expected0]" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose1-expected1]" time="0.006" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose2-expected2]" time="0.005" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose3-expected3]" time="0.006" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose4-expected4]" time="0.003" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_cues[pose5-expected5]" time="0.004" /><testcase classname="module_sg3.tests.test_sg3" name="test_head_pose_missing_or_nan_gives_none" time="0.002" /><testcase classname="module_sg3.tests.test_sg3" name="test_pitch_sign_config" time="0.006" /><testcase classname="module_sg3.tests.test_sg3" name="test_to_dict_is_json_ready" time="0.004" /><testcase classname="module_sg4.tests.test_analyzer" name="test_01_all_open_10s" time="0.014" /><testcase classname="module_sg4.tests.test_analyzer" name="test_02_continuous_2s_closure" time="0.006" /><testcase classname="module_sg4.tests.test_analyzer" name="test_03_half_closed_no_blinks" time="0.032" /><testcase classname="module_sg4.tests.test_analyzer" name="test_04_blinks" time="0.050" /><testcase classname="module_sg4.tests.test_analyzer" name="test_05_face_lost_40_percent" time="0.068" /><testcase classname="module_sg4.tests.test_analyzer" name="test_06_warmup" time="0.013" /><testcase classname="module_sg4.tests.test_analyzer" name="test_07_gap_bridging" time="0.011" /><testcase classname="module_sg4.tests.test_analyzer" name="test_08_yawn" time="0.054" /><testcase classname="module_sg4.tests.test_analyzer" name="test_09_window_expiry" time="0.028" /><testcase classname="module_sg4.tests.test_analyzer" name="test_10_determinism_and_reset" time="0.947" /><testcase classname="module_sg4.tests.test_analyzer" name="test_11_bad_timestamps" time="0.002" /><testcase classname="module_sg4.tests.test_analyzer" name="test_11b_first_record_bad_does_not_crash" time="0.002" /><testcase classname="module_sg4.tests.test_analyzer" name="test_12_output_contract" time="0.404" /><testcase classname="module_sg4.tests.test_analyzer" name="test_bad_values_never_crash" time="0.003" /><testcase classname="module_sg4.tests.test_analyzer" name="test_diagnostic_mouth_valid_fraction" time="0.009" /><testcase classname="module_sg4.tests.test_analyzer" name="test_config_validation_and_roundtrip" time="0.287"><error message="failed on setup with &quot;OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_and_report.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026059A5CE00&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -&gt; CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+&gt;           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv\Lib\site-packages\_pytest\runner.py:361:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\_pytest\runner.py:250: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\logging.py:871: in pytest_runtest_setup
+    yield
+.venv\Lib\site-packages\_pytest\capture.py:901: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\runner.py:170: in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+.venv\Lib\site-packages\_pytest\runner.py:536: in setup
+    col.setup()
+.venv\Lib\site-packages\_pytest\python.py:1801: in setup
+    self._request._fillfixtures()
+.venv\Lib\site-packages\_pytest\fixtures.py:877: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:701: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:797: in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+.venv\Lib\site-packages\_pytest\fixtures.py:1301: in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\setuponly.py:36: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1407: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1067: in call_fixture_func
+    fixture_result = next(generator)
+                     ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:338: in tmp_path
+    path = _mk_tmp(request, tmp_path_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:325: in _mk_tmp
+    return factory.mktemp(name, numbered=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:138: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:118: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:253: in getbasetemp
+    basetemp = make_numbered_dir_with_cleanup(
+.venv\Lib\site-packages\_pytest\pathlib.py:464: in make_numbered_dir_with_cleanup
+    raise e
+.venv\Lib\site-packages\_pytest\pathlib.py:445: in make_numbered_dir_with_cleanup
+    p = make_numbered_dir(root, prefix, mode)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/Users/HP/AppData/Local/Packages/sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}/AC/Temp/pytest-of-HP')
+prefix = 'pytest-', mode = 448
+
+    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -&gt; Path:
+        """Create a directory with an increased number as suffix for the given prefix."""
+        for i in range(10):
+            # try up to 10 times to create the directory
+            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)
+            new_number = max_existing + 1
+            new_path = root.joinpath(f"{prefix}{new_number}")
+            try:
+                new_path.mkdir(mode=mode)
+            except Exception:
+                pass
+            else:
+                _force_symlink(root, prefix + "current", new_path)
+                return new_path
+        else:
+&gt;           raise OSError(
+                "could not create numbered dir with prefix "
+                f"{prefix} in {root} after 10 tries"
+            )
+E           OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries
+
+.venv\Lib\site-packages\_pytest\pathlib.py:283: OSError</error></testcase><testcase classname="module_sg4.tests.test_io" name="test_13_flatten_matches_flat" time="0.001" /><testcase classname="module_sg4.tests.test_io" name="test_13_nested_stream_gives_same_outputs" time="0.735" /><testcase classname="module_sg4.tests.test_io" name="test_flatten_missing_blocks" time="0.002" /><testcase classname="module_sg4.tests.test_io" name="test_jsonl_roundtrip_and_bad_lines" time="0.159"><error message="failed on setup with &quot;OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_and_report.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026059EA1260&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -&gt; CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+&gt;           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv\Lib\site-packages\_pytest\runner.py:361:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\_pytest\runner.py:250: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\logging.py:871: in pytest_runtest_setup
+    yield
+.venv\Lib\site-packages\_pytest\capture.py:901: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\runner.py:170: in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+.venv\Lib\site-packages\_pytest\runner.py:536: in setup
+    col.setup()
+.venv\Lib\site-packages\_pytest\python.py:1801: in setup
+    self._request._fillfixtures()
+.venv\Lib\site-packages\_pytest\fixtures.py:877: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:701: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:797: in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+.venv\Lib\site-packages\_pytest\fixtures.py:1301: in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\setuponly.py:36: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1407: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1067: in call_fixture_func
+    fixture_result = next(generator)
+                     ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:338: in tmp_path
+    path = _mk_tmp(request, tmp_path_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:325: in _mk_tmp
+    return factory.mktemp(name, numbered=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:138: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:118: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:253: in getbasetemp
+    basetemp = make_numbered_dir_with_cleanup(
+.venv\Lib\site-packages\_pytest\pathlib.py:464: in make_numbered_dir_with_cleanup
+    raise e
+.venv\Lib\site-packages\_pytest\pathlib.py:445: in make_numbered_dir_with_cleanup
+    p = make_numbered_dir(root, prefix, mode)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/Users/HP/AppData/Local/Packages/sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}/AC/Temp/pytest-of-HP')
+prefix = 'pytest-', mode = 448
+
+    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -&gt; Path:
+        """Create a directory with an increased number as suffix for the given prefix."""
+        for i in range(10):
+            # try up to 10 times to create the directory
+            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)
+            new_number = max_existing + 1
+            new_path = root.joinpath(f"{prefix}{new_number}")
+            try:
+                new_path.mkdir(mode=mode)
+            except Exception:
+                pass
+            else:
+                _force_symlink(root, prefix + "current", new_path)
+                return new_path
+        else:
+&gt;           raise OSError(
+                "could not create numbered dir with prefix "
+                f"{prefix} in {root} after 10 tries"
+            )
+E           OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries
+
+.venv\Lib\site-packages\_pytest\pathlib.py:283: OSError</error></testcase><testcase classname="module_sg4.tests.test_tools" name="test_generator_deterministic_and_has_truth[normal]" time="0.172" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_deterministic_and_has_truth[drowsy]" time="0.204" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_deterministic_and_has_truth[yawning]" time="0.135" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_deterministic_and_has_truth[face_lost]" time="0.143" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_deterministic_and_has_truth[mixed]" time="0.198" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_different_seed_differs_and_fps" time="0.121" /><testcase classname="module_sg4.tests.test_tools" name="test_generator_bad_timestamps_and_cli" time="0.139"><error message="failed on setup with &quot;OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_and_report.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026059EA1800&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -&gt; CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+&gt;           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv\Lib\site-packages\_pytest\runner.py:361:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\_pytest\runner.py:250: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\logging.py:871: in pytest_runtest_setup
+    yield
+.venv\Lib\site-packages\_pytest\capture.py:901: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\runner.py:170: in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+.venv\Lib\site-packages\_pytest\runner.py:536: in setup
+    col.setup()
+.venv\Lib\site-packages\_pytest\python.py:1801: in setup
+    self._request._fillfixtures()
+.venv\Lib\site-packages\_pytest\fixtures.py:877: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:701: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:797: in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+.venv\Lib\site-packages\_pytest\fixtures.py:1301: in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\setuponly.py:36: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1407: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1067: in call_fixture_func
+    fixture_result = next(generator)
+                     ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:338: in tmp_path
+    path = _mk_tmp(request, tmp_path_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:325: in _mk_tmp
+    return factory.mktemp(name, numbered=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:138: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:118: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:253: in getbasetemp
+    basetemp = make_numbered_dir_with_cleanup(
+.venv\Lib\site-packages\_pytest\pathlib.py:464: in make_numbered_dir_with_cleanup
+    raise e
+.venv\Lib\site-packages\_pytest\pathlib.py:445: in make_numbered_dir_with_cleanup
+    p = make_numbered_dir(root, prefix, mode)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/Users/HP/AppData/Local/Packages/sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}/AC/Temp/pytest-of-HP')
+prefix = 'pytest-', mode = 448
+
+    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -&gt; Path:
+        """Create a directory with an increased number as suffix for the given prefix."""
+        for i in range(10):
+            # try up to 10 times to create the directory
+            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)
+            new_number = max_existing + 1
+            new_path = root.joinpath(f"{prefix}{new_number}")
+            try:
+                new_path.mkdir(mode=mode)
+            except Exception:
+                pass
+            else:
+                _force_symlink(root, prefix + "current", new_path)
+                return new_path
+        else:
+&gt;           raise OSError(
+                "could not create numbered dir with prefix "
+                f"{prefix} in {root} after 10 tries"
+            )
+E           OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries
+
+.venv\Lib\site-packages\_pytest\pathlib.py:283: OSError</error></testcase><testcase classname="module_sg4.tests.test_tools" name="test_end_to_end_clean_stream_scores_well" time="0.848" /><testcase classname="module_sg4.tests.test_tools" name="test_metric_helpers" time="0.002" /><testcase classname="module_sg4.tests.test_tools" name="test_replay_cli_flat_nested_and_bad_lines" time="0.222"><error message="failed on setup with &quot;OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_and_report.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026059EA2020&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -&gt; CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+&gt;           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv\Lib\site-packages\_pytest\runner.py:361:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\_pytest\runner.py:250: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\logging.py:871: in pytest_runtest_setup
+    yield
+.venv\Lib\site-packages\_pytest\capture.py:901: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\runner.py:170: in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+.venv\Lib\site-packages\_pytest\runner.py:536: in setup
+    col.setup()
+.venv\Lib\site-packages\_pytest\python.py:1801: in setup
+    self._request._fillfixtures()
+.venv\Lib\site-packages\_pytest\fixtures.py:877: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:701: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:797: in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+.venv\Lib\site-packages\_pytest\fixtures.py:1301: in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\setuponly.py:36: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1407: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1067: in call_fixture_func
+    fixture_result = next(generator)
+                     ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:338: in tmp_path
+    path = _mk_tmp(request, tmp_path_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:325: in _mk_tmp
+    return factory.mktemp(name, numbered=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:138: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:118: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:253: in getbasetemp
+    basetemp = make_numbered_dir_with_cleanup(
+.venv\Lib\site-packages\_pytest\pathlib.py:464: in make_numbered_dir_with_cleanup
+    raise e
+.venv\Lib\site-packages\_pytest\pathlib.py:445: in make_numbered_dir_with_cleanup
+    p = make_numbered_dir(root, prefix, mode)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/Users/HP/AppData/Local/Packages/sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}/AC/Temp/pytest-of-HP')
+prefix = 'pytest-', mode = 448
+
+    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -&gt; Path:
+        """Create a directory with an increased number as suffix for the given prefix."""
+        for i in range(10):
+            # try up to 10 times to create the directory
+            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)
+            new_number = max_existing + 1
+            new_path = root.joinpath(f"{prefix}{new_number}")
+            try:
+                new_path.mkdir(mode=mode)
+            except Exception:
+                pass
+            else:
+                _force_symlink(root, prefix + "current", new_path)
+                return new_path
+        else:
+&gt;           raise OSError(
+                "could not create numbered dir with prefix "
+                f"{prefix} in {root} after 10 tries"
+            )
+E           OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries
+
+.venv\Lib\site-packages\_pytest\pathlib.py:283: OSError</error></testcase><testcase classname="module_sg4.tests.test_tools" name="test_sweep_grid_and_invalid_combo" time="0.158"><error message="failed on setup with &quot;OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_and_report.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026059EA23E0&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -&gt; CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+&gt;           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv\Lib\site-packages\_pytest\runner.py:361:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\_pytest\runner.py:250: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\logging.py:871: in pytest_runtest_setup
+    yield
+.venv\Lib\site-packages\_pytest\capture.py:901: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\runner.py:170: in pytest_runtest_setup
+    item.session._setupstate.setup(item)
+.venv\Lib\site-packages\_pytest\runner.py:536: in setup
+    col.setup()
+.venv\Lib\site-packages\_pytest\python.py:1801: in setup
+    self._request._fillfixtures()
+.venv\Lib\site-packages\_pytest\fixtures.py:877: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:701: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:797: in _get_active_fixturedef
+    fixturedef.execute(request=subrequest)
+.venv\Lib\site-packages\_pytest\fixtures.py:1301: in execute
+    result: FixtureValue = ihook.pytest_fixture_setup(
+.venv\Lib\site-packages\pluggy\_caller.py:197: in __call__
+    return self._hookexec(
+.venv\Lib\site-packages\pluggy\_manager.py:183: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\setuponly.py:36: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1407: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\fixtures.py:1067: in call_fixture_func
+    fixture_result = next(generator)
+                     ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:338: in tmp_path
+    path = _mk_tmp(request, tmp_path_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:325: in _mk_tmp
+    return factory.mktemp(name, numbered=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:138: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:118: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\_pytest\tmpdir.py:253: in getbasetemp
+    basetemp = make_numbered_dir_with_cleanup(
+.venv\Lib\site-packages\_pytest\pathlib.py:464: in make_numbered_dir_with_cleanup
+    raise e
+.venv\Lib\site-packages\_pytest\pathlib.py:445: in make_numbered_dir_with_cleanup
+    p = make_numbered_dir(root, prefix, mode)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/Users/HP/AppData/Local/Packages/sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}/AC/Temp/pytest-of-HP')
+prefix = 'pytest-', mode = 448
+
+    def make_numbered_dir(root: Path, prefix: str, mode: int = 0o700) -&gt; Path:
+        """Create a directory with an increased number as suffix for the given prefix."""
+        for i in range(10):
+            # try up to 10 times to create the directory
+            max_existing = max(map(parse_num, find_suffixes(root, prefix)), default=-1)
+            new_number = max_existing + 1
+            new_path = root.joinpath(f"{prefix}{new_number}")
+            try:
+                new_path.mkdir(mode=mode)
+            except Exception:
+                pass
+            else:
+                _force_symlink(root, prefix + "current", new_path)
+                return new_path
+        else:
+&gt;           raise OSError(
+                "could not create numbered dir with prefix "
+                f"{prefix} in {root} after 10 tries"
+            )
+E           OSError: could not create numbered dir with prefix pytest- in C:\Users\HP\AppData\Local\Packages\sandbox.{355cab94-69ba-4b5e-9253-7f6cde92127c}\AC\Temp\pytest-of-HP after 10 tries
+
+.venv\Lib\site-packages\_pytest\pathlib.py:283: OSError</error></testcase></testsuite></testsuites>

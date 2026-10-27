@@ -1,0 +1,75 @@
+{
+  "hypothesis": "Caching an unchanged SG2 schema validator reduces validation overhead without changing algorithm outputs",
+  "verification": "VERIFIED ON RECORDED INPUT (SG1 landmarks only)",
+  "input": "interfaces\\sg2\\examples\\eb8_09_real_sg1.jsonl",
+  "input_sha256": "aa58cef98440ae9535af167b012e3c2fb955f84f3f37ba6eea9c54e69b2a0014",
+  "factor": "Validator construction/checking strategy only",
+  "eye_config": "backup.yaml (no image/CNN)",
+  "identical_outputs": true,
+  "rows": [
+    {
+      "repeat": 0,
+      "mode": "baseline",
+      "frames": 600,
+      "elapsed_s": 26.780667500000163,
+      "processing_fps": 22.40422125400707,
+      "validation_mean_ms": 43.51380516666665,
+      "rss_bytes": 54996992,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    },
+    {
+      "repeat": 0,
+      "mode": "cached",
+      "frames": 600,
+      "elapsed_s": 1.582421200000681,
+      "processing_fps": 379.16579985135553,
+      "validation_mean_ms": 1.255273833333334,
+      "rss_bytes": 55611392,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    },
+    {
+      "repeat": 1,
+      "mode": "cached",
+      "frames": 600,
+      "elapsed_s": 0.9454745000002731,
+      "processing_fps": 634.601990852029,
+      "validation_mean_ms": 0.7129504999999985,
+      "rss_bytes": 55304192,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    },
+    {
+      "repeat": 1,
+      "mode": "baseline",
+      "frames": 600,
+      "elapsed_s": 27.405509100000017,
+      "processing_fps": 21.89340828556254,
+      "validation_mean_ms": 44.646335166666645,
+      "rss_bytes": 55312384,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    },
+    {
+      "repeat": 2,
+      "mode": "baseline",
+      "frames": 600,
+      "elapsed_s": 32.24651070000073,
+      "processing_fps": 18.60666431732679,
+      "validation_mean_ms": 52.60454483333334,
+      "rss_bytes": 55783424,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    },
+    {
+      "repeat": 2,
+      "mode": "cached",
+      "frames": 600,
+      "elapsed_s": 1.2752854999998817,
+      "processing_fps": 470.4828840287572,
+      "validation_mean_ms": 0.9581711666666659,
+      "rss_bytes": 55975936,
+      "output_sha256": "1b1c932f1196764eedf57580115396c6e8d480c3edbbac7998d46d6921d49812"
+    }
+  ],
+  "median_fps": {
+    "baseline": 21.89340828556254,
+    "cached": 470.4828840287572
+  }
+}

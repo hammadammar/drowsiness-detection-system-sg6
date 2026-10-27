@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETED",
+  "error": null,
+  "frames": 30,
+  "errors": 0,
+  "elapsed_s": 9.762715500000013,
+  "processing_fps": 3.072915522325726,
+  "mean_stage_ms": {
+    "sg2_ms": 0.026443333333333333,
+    "validation_ms": 0.7252833333333332,
+    "sg3_ms": 0.010086666666666666,
+    "sg4_ms": 0.09115666666666669,
+    "sg5_ms": 0.004326666666666667,
+    "alert_ms": 0.0036266666666666665,
+    "pipeline_ms": 0.9069933333333337,
+    "capture_ms": 0.8117000000000001,
+    "sg1_ms": 7.59766
+  },
+  "max_stage_ms": {
+    "sg2_ms": 0.0376,
+    "validation_ms": 1.6404,
+    "sg3_ms": 0.0191,
+    "sg4_ms": 0.3878,
+    "sg5_ms": 0.0075,
+    "alert_ms": 0.0059,
+    "pipeline_ms": 2.1665,
+    "capture_ms": 5.6187,
+    "sg1_ms": 11.7569
+  },
+  "peak_sampled_rss_bytes": 167362560,
+  "cpu_percent_one_core": 78.58341257614227,
+  "gpu_utilization": null,
+  "camera_to_alert_latency_ms": null,
+  "frame_drops": null,
+  "verification": "RAW INPUT RUN; SEE STATUS",
+  "input": "evaluation\\no_face_fixture.avi",
+  "config": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "driver_region": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "eye_config": "module_sg2/configs/primary.yaml",
+    "temporal": {},
+    "decision_method": "rule",
+    "alert_cooldown_ms": 5000
+  }
+}

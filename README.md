@@ -1,5 +1,9 @@
 # Drowsiness Detection System
 
+SG6 integrated application and transfer instructions: [START_HERE_JETSON.md](START_HERE_JETSON.md).
+Run `python -m embedded_sg6.app --help` from this repository root.
+Current status: local landmark replay and no-face model smoke test verified; Jetson deployment remains untested.
+
 ## Repository Structure
 ```
 project/
